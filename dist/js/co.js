@@ -715,5 +715,82 @@
     })();
 
 
+    
+    // search :
+    (function () {
 
+        // Defining a variable (dependent) and its usefulness Defining the element related to the event to the previous one such as (click, dblclick, change ..) :
+        let dependent_search = $('[data-target]');
+
+        // Select all elements:
+        dependent_search.each(function (index, ele_dep) {
+
+            // Element was extracted with id specified in (attr(data-target))
+            let ele_search = $(`#${ele_dep.getAttributeNode('data-target').value}`);
+
+            // Select all elements:
+            ele_search.each(function (index, ele_se) {
+
+                // The dependent must contain(attr(data-description)) ... in order to perform the search
+                if (ele_dep.getAttributeNode('data-description') !== null) {
+
+                    // Stores the display value before the change 
+                    let DP = ele_dep.style.display;
+
+                    // input > onkeyup 
+                    ele_search.keyup(function () {
+
+                        // Check words stored in attr (data-description) to check input values and values stored in attr (data-description)
+                        search_fn($(this)
+                        
+                        // get value :
+                        .val()
+                        
+                        // Delete the spaces at the beginning and end in the entered value
+                        .trim());
+                    });
+
+                    // check_fn
+                    function search_fn(val) { 
+
+                        // Define a variable with the value (False) Match Check
+                        let found = false,
+
+                        // Define a variable in the form of an array to check the previously mentioned description sentences
+                            data_des = ele_dep.getAttributeNode('data-description').value.split(',');
+
+                        // for each :    
+                        for (let i = 0; i < data_des.length; i++) {
+
+                            // Check description and input
+                            if (data_des[i].trim().toLowerCase().indexOf(val.toLowerCase()) >= 0) {
+
+                                // Modify the variable value to specify the type of display
+                                found = true;
+                            }
+
+                            // If the entry contains the description
+                            if (found == true) {
+
+                                // show :
+                                ele_dep.style.display = 
+
+                                // Verify that the display value is none
+                                DP !== 'none' ? DP : 
+
+                                // If it is not equal
+                                'block';
+
+                                // In the event of a mismatch
+                            } else {
+
+                                // hide :
+                                ele_dep.style.display = 'none';
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    })();
 // ---------------------------------------------------------------------------------------------------------------------------------------
