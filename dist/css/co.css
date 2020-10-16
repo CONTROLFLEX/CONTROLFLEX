@@ -27,7 +27,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   color: #4e4e4e;
   background-color: transparent;
 }
@@ -64,7 +64,7 @@ video {
 }
 
 a {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   text-decoration: none;
   -moz-text-decoration-color: currentColor;
@@ -148,12 +148,12 @@ b, strong {
 }
 
 small {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 code, pre, .custom-pre, samp, kbd {
   font-family: monospace;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -187,13 +187,12 @@ pre code, .custom-pre code {
   word-break: normal;
 }
 
-label {
+label, .dropdown, nav, .navbar, .navbar-sticky, .link, .bn, .bn-xs-xl, .bn-sm-xl, .bn-md-xl, .bn-lg-xl, .bn-xl-xl, .bn-xs-lg, .bn-sm-lg, .bn-md-lg, .bn-lg-lg, .bn-xl-lg, .bn-xs-md, .bn-sm-md, .bn-md-md, .bn-lg-md, .bn-xl-md, .bn-xs-sm, .bn-sm-sm, .bn-md-sm, .bn-lg-sm, .bn-xl-sm, .bn-xs-xs, .bn-sm-xs, .bn-md-xs, .bn-lg-xs, .bn-xl-xs, .bn-xs-lxs, .bn-sm-lxs, .bn-md-lxs, .bn-lg-lxs, .bn-xl-lxs {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   display: inline-block;
-  font-size: 18px;
 }
 
 button,
@@ -269,7 +268,7 @@ legend {
   display: block;
   max-width: 100%;
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: inherit;
   color: inherit;
   white-space: normal;
@@ -284,7 +283,6 @@ kbd {
 
 kbd kbd {
   padding: 0;
-  font-size: 20px;
   font-weight: 400;
 }
 
@@ -309,7 +307,7 @@ hr, .hr {
   top: -18px;
   left: 50%;
   z-index: 10;
-  font-size: 26px;
+  font-size: 20px;
   -webkit-transform: translate(-50%, 0px);
   -moz-transform: translate(-50%, 0px);
   -ms-transform: translate(-50%, 0px);
@@ -317,6 +315,11 @@ hr, .hr {
   transform: translate(-50%, 0px);
 }
 
+@media (max-width: 400px) {
+  .hr::before {
+    font-size: 15px;
+  }
+}
 mark, .mark {
   padding: 8px;
   background-color: #f5f9ff;
@@ -397,14 +400,14 @@ button:not(:disabled),
 }
 
 .blockquote {
-  font-size: 18px;
+  font-size: 15px;
   margin-bottom: 8px;
   margin-inline-start: 8px;
 }
 
 .blockquote-footer {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   margin-block-start: 4px;
   margin-inline-start: 8px;
   color: #94a2af;
@@ -488,7 +491,7 @@ button:not(:disabled),
 }
 
 .table {
-  font-size: 16px;
+  font-size: inherit;
   border: 1px solid #5f5f5f50;
   border-collapse: collapse;
   padding: 8px 12px;
@@ -886,11 +889,7 @@ button:not(:disabled),
   border-radius: 10px;
   color: #4e4e4e;
   background-color: #bebebe50;
-  font-size: 16px;
   word-break: break-word;
-}
-.card-caption * {
-  font-size: 16px;
 }
 
 .shadow-caption {
@@ -3638,7 +3637,7 @@ progress or delay of the item;
   position: relative;
   background-color: #eb1c3060;
   color: #eb1c30;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   padding: 10px 12px;
   max-width: 100%;
@@ -4888,7 +4887,7 @@ progress or delay of the item;
   min-width: 60px;
   min-height: 60px;
   border-radius: 60px;
-  font-size: 18px;
+  font-size: 15px;
   padding: 20px;
 }
 
@@ -4897,7 +4896,7 @@ progress or delay of the item;
   min-width: 60px;
   min-height: 46.8px;
   padding: 10px 15px;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 60px;
 }
 
@@ -4906,7 +4905,7 @@ progress or delay of the item;
   min-width: 100px;
   min-height: 100px;
   border-radius: 100px;
-  font-size: 21px;
+  font-size: 18px;
   padding: 33.3333333333px;
 }
 
@@ -4914,7 +4913,7 @@ progress or delay of the item;
   min-width: 100px;
   min-height: 78px;
   padding: 15.3333333333px 25px;
-  font-size: 21px;
+  font-size: 18px;
   border-radius: 100px;
 }
 
@@ -4922,7 +4921,7 @@ progress or delay of the item;
 .bn-xl {
   min-width: 100px;
   height: auto;
-  font-size: 21px;
+  font-size: 18px;
   padding: 13.3333333333px 25px;
 }
 
@@ -4930,7 +4929,7 @@ progress or delay of the item;
 .bn-group-xl > button {
   min-width: 100px;
   height: auto;
-  font-size: 21px;
+  font-size: 18px;
   padding: 13.3333333333px 25px;
 }
 
@@ -4938,7 +4937,7 @@ progress or delay of the item;
   min-width: 80px;
   min-height: 80px;
   border-radius: 80px;
-  font-size: 20px;
+  font-size: 17px;
   padding: 26.6666666667px;
 }
 
@@ -4946,7 +4945,7 @@ progress or delay of the item;
   min-width: 80px;
   min-height: 62.4px;
   padding: 12.6666666667px 20px;
-  font-size: 20px;
+  font-size: 17px;
   border-radius: 80px;
 }
 
@@ -4954,7 +4953,7 @@ progress or delay of the item;
 .bn-lg {
   min-width: 80px;
   height: auto;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10.6666666667px 20px;
 }
 
@@ -4962,7 +4961,7 @@ progress or delay of the item;
 .bn-group-lg > button {
   min-width: 80px;
   height: auto;
-  font-size: 20px;
+  font-size: 17px;
   padding: 10.6666666667px 20px;
 }
 
@@ -4970,7 +4969,7 @@ progress or delay of the item;
   min-width: 60px;
   min-height: 60px;
   border-radius: 60px;
-  font-size: 18px;
+  font-size: 15px;
   padding: 20px;
 }
 
@@ -4978,7 +4977,7 @@ progress or delay of the item;
   min-width: 60px;
   min-height: 46.8px;
   padding: 10px 15px;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 60px;
 }
 
@@ -4986,7 +4985,7 @@ progress or delay of the item;
 .bn-md {
   min-width: 60px;
   height: auto;
-  font-size: 18px;
+  font-size: 15px;
   padding: 8px 15px;
 }
 
@@ -4994,7 +4993,7 @@ progress or delay of the item;
 .bn-group-md > button {
   min-width: 60px;
   height: auto;
-  font-size: 18px;
+  font-size: 15px;
   padding: 8px 15px;
 }
 
@@ -5002,7 +5001,7 @@ progress or delay of the item;
   min-width: 40px;
   min-height: 40px;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 14px;
   padding: 13.3333333333px;
 }
 
@@ -5010,7 +5009,7 @@ progress or delay of the item;
   min-width: 40px;
   min-height: 31.2px;
   padding: 7.3333333333px 10px;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 40px;
 }
 
@@ -5018,7 +5017,7 @@ progress or delay of the item;
 .bn-sm {
   min-width: 40px;
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
   padding: 5.3333333333px 10px;
 }
 
@@ -5026,7 +5025,7 @@ progress or delay of the item;
 .bn-group-sm > button {
   min-width: 40px;
   height: auto;
-  font-size: 16px;
+  font-size: 14px;
   padding: 5.3333333333px 10px;
 }
 
@@ -5034,7 +5033,7 @@ progress or delay of the item;
   min-width: 35px;
   min-height: 35px;
   border-radius: 35px;
-  font-size: 14px;
+  font-size: 12px;
   padding: 11.6666666667px;
 }
 
@@ -5042,7 +5041,7 @@ progress or delay of the item;
   min-width: 35px;
   min-height: 27.3px;
   padding: 6.6666666667px 8.75px;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 35px;
 }
 
@@ -5050,7 +5049,7 @@ progress or delay of the item;
 .bn-xs {
   min-width: 35px;
   height: auto;
-  font-size: 14px;
+  font-size: 12px;
   padding: 4.6666666667px 8.75px;
 }
 
@@ -5058,7 +5057,7 @@ progress or delay of the item;
 .bn-group-xs > button {
   min-width: 35px;
   height: auto;
-  font-size: 14px;
+  font-size: 12px;
   padding: 4.6666666667px 8.75px;
 }
 
@@ -5067,7 +5066,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 100px;
     border-radius: 100px;
-    font-size: 21px;
+    font-size: 18px;
     padding: 33.3333333333px;
   }
 
@@ -5075,7 +5074,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 78px;
     padding: 15.3333333333px 25px;
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 100px;
   }
 
@@ -5083,7 +5082,7 @@ progress or delay of the item;
   .bn-xl-lxs {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5091,7 +5090,7 @@ progress or delay of the item;
   .bn-group-xl-lxs > button {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5099,7 +5098,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 80px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 26.6666666667px;
   }
 
@@ -5107,7 +5106,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 62.4px;
     padding: 12.6666666667px 20px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 80px;
   }
 
@@ -5115,7 +5114,7 @@ progress or delay of the item;
   .bn-lg-lxs {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5123,7 +5122,7 @@ progress or delay of the item;
   .bn-group-lg-lxs > button {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5131,7 +5130,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 60px;
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
   }
 
@@ -5139,7 +5138,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 46.8px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 60px;
   }
 
@@ -5147,7 +5146,7 @@ progress or delay of the item;
   .bn-md-lxs {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5155,7 +5154,7 @@ progress or delay of the item;
   .bn-group-md-lxs > button {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5163,7 +5162,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 40px;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 13.3333333333px;
   }
 
@@ -5171,7 +5170,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 31.2px;
     padding: 7.3333333333px 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 40px;
   }
 
@@ -5179,7 +5178,7 @@ progress or delay of the item;
   .bn-sm-lxs {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5187,7 +5186,7 @@ progress or delay of the item;
   .bn-group-sm-lxs > button {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5195,7 +5194,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 35px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 11.6666666667px;
   }
 
@@ -5203,7 +5202,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 27.3px;
     padding: 6.6666666667px 8.75px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 35px;
   }
 
@@ -5211,7 +5210,7 @@ progress or delay of the item;
   .bn-xs-lxs {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 
@@ -5219,7 +5218,7 @@ progress or delay of the item;
   .bn-group-xs-lxs > button {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 }
@@ -5228,7 +5227,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 100px;
     border-radius: 100px;
-    font-size: 21px;
+    font-size: 18px;
     padding: 33.3333333333px;
   }
 
@@ -5236,7 +5235,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 78px;
     padding: 15.3333333333px 25px;
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 100px;
   }
 
@@ -5244,7 +5243,7 @@ progress or delay of the item;
   .bn-xl-xs {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5252,7 +5251,7 @@ progress or delay of the item;
   .bn-group-xl-xs > button {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5260,7 +5259,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 80px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 26.6666666667px;
   }
 
@@ -5268,7 +5267,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 62.4px;
     padding: 12.6666666667px 20px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 80px;
   }
 
@@ -5276,7 +5275,7 @@ progress or delay of the item;
   .bn-lg-xs {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5284,7 +5283,7 @@ progress or delay of the item;
   .bn-group-lg-xs > button {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5292,7 +5291,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 60px;
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
   }
 
@@ -5300,7 +5299,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 46.8px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 60px;
   }
 
@@ -5308,7 +5307,7 @@ progress or delay of the item;
   .bn-md-xs {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5316,7 +5315,7 @@ progress or delay of the item;
   .bn-group-md-xs > button {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5324,7 +5323,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 40px;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 13.3333333333px;
   }
 
@@ -5332,7 +5331,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 31.2px;
     padding: 7.3333333333px 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 40px;
   }
 
@@ -5340,7 +5339,7 @@ progress or delay of the item;
   .bn-sm-xs {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5348,7 +5347,7 @@ progress or delay of the item;
   .bn-group-sm-xs > button {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5356,7 +5355,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 35px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 11.6666666667px;
   }
 
@@ -5364,7 +5363,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 27.3px;
     padding: 6.6666666667px 8.75px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 35px;
   }
 
@@ -5372,7 +5371,7 @@ progress or delay of the item;
   .bn-xs-xs {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 
@@ -5380,7 +5379,7 @@ progress or delay of the item;
   .bn-group-xs-xs > button {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 }
@@ -5389,7 +5388,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 100px;
     border-radius: 100px;
-    font-size: 21px;
+    font-size: 18px;
     padding: 33.3333333333px;
   }
 
@@ -5397,7 +5396,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 78px;
     padding: 15.3333333333px 25px;
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 100px;
   }
 
@@ -5405,7 +5404,7 @@ progress or delay of the item;
   .bn-xl-sm {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5413,7 +5412,7 @@ progress or delay of the item;
   .bn-group-xl-sm > button {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5421,7 +5420,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 80px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 26.6666666667px;
   }
 
@@ -5429,7 +5428,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 62.4px;
     padding: 12.6666666667px 20px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 80px;
   }
 
@@ -5437,7 +5436,7 @@ progress or delay of the item;
   .bn-lg-sm {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5445,7 +5444,7 @@ progress or delay of the item;
   .bn-group-lg-sm > button {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5453,7 +5452,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 60px;
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
   }
 
@@ -5461,7 +5460,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 46.8px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 60px;
   }
 
@@ -5469,7 +5468,7 @@ progress or delay of the item;
   .bn-md-sm {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5477,7 +5476,7 @@ progress or delay of the item;
   .bn-group-md-sm > button {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5485,7 +5484,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 40px;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 13.3333333333px;
   }
 
@@ -5493,7 +5492,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 31.2px;
     padding: 7.3333333333px 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 40px;
   }
 
@@ -5501,7 +5500,7 @@ progress or delay of the item;
   .bn-sm-sm {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5509,7 +5508,7 @@ progress or delay of the item;
   .bn-group-sm-sm > button {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5517,7 +5516,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 35px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 11.6666666667px;
   }
 
@@ -5525,7 +5524,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 27.3px;
     padding: 6.6666666667px 8.75px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 35px;
   }
 
@@ -5533,7 +5532,7 @@ progress or delay of the item;
   .bn-xs-sm {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 
@@ -5541,7 +5540,7 @@ progress or delay of the item;
   .bn-group-xs-sm > button {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 }
@@ -5550,7 +5549,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 100px;
     border-radius: 100px;
-    font-size: 21px;
+    font-size: 18px;
     padding: 33.3333333333px;
   }
 
@@ -5558,7 +5557,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 78px;
     padding: 15.3333333333px 25px;
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 100px;
   }
 
@@ -5566,7 +5565,7 @@ progress or delay of the item;
   .bn-xl-md {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5574,7 +5573,7 @@ progress or delay of the item;
   .bn-group-xl-md > button {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5582,7 +5581,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 80px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 26.6666666667px;
   }
 
@@ -5590,7 +5589,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 62.4px;
     padding: 12.6666666667px 20px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 80px;
   }
 
@@ -5598,7 +5597,7 @@ progress or delay of the item;
   .bn-lg-md {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5606,7 +5605,7 @@ progress or delay of the item;
   .bn-group-lg-md > button {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5614,7 +5613,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 60px;
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
   }
 
@@ -5622,7 +5621,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 46.8px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 60px;
   }
 
@@ -5630,7 +5629,7 @@ progress or delay of the item;
   .bn-md-md {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5638,7 +5637,7 @@ progress or delay of the item;
   .bn-group-md-md > button {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5646,7 +5645,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 40px;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 13.3333333333px;
   }
 
@@ -5654,7 +5653,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 31.2px;
     padding: 7.3333333333px 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 40px;
   }
 
@@ -5662,7 +5661,7 @@ progress or delay of the item;
   .bn-sm-md {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5670,7 +5669,7 @@ progress or delay of the item;
   .bn-group-sm-md > button {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5678,7 +5677,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 35px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 11.6666666667px;
   }
 
@@ -5686,7 +5685,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 27.3px;
     padding: 6.6666666667px 8.75px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 35px;
   }
 
@@ -5694,7 +5693,7 @@ progress or delay of the item;
   .bn-xs-md {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 
@@ -5702,7 +5701,7 @@ progress or delay of the item;
   .bn-group-xs-md > button {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 }
@@ -5711,7 +5710,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 100px;
     border-radius: 100px;
-    font-size: 21px;
+    font-size: 18px;
     padding: 33.3333333333px;
   }
 
@@ -5719,7 +5718,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 78px;
     padding: 15.3333333333px 25px;
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 100px;
   }
 
@@ -5727,7 +5726,7 @@ progress or delay of the item;
   .bn-xl-lg {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5735,7 +5734,7 @@ progress or delay of the item;
   .bn-group-xl-lg > button {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5743,7 +5742,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 80px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 26.6666666667px;
   }
 
@@ -5751,7 +5750,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 62.4px;
     padding: 12.6666666667px 20px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 80px;
   }
 
@@ -5759,7 +5758,7 @@ progress or delay of the item;
   .bn-lg-lg {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5767,7 +5766,7 @@ progress or delay of the item;
   .bn-group-lg-lg > button {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5775,7 +5774,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 60px;
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
   }
 
@@ -5783,7 +5782,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 46.8px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 60px;
   }
 
@@ -5791,7 +5790,7 @@ progress or delay of the item;
   .bn-md-lg {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5799,7 +5798,7 @@ progress or delay of the item;
   .bn-group-md-lg > button {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5807,7 +5806,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 40px;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 13.3333333333px;
   }
 
@@ -5815,7 +5814,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 31.2px;
     padding: 7.3333333333px 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 40px;
   }
 
@@ -5823,7 +5822,7 @@ progress or delay of the item;
   .bn-sm-lg {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5831,7 +5830,7 @@ progress or delay of the item;
   .bn-group-sm-lg > button {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5839,7 +5838,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 35px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 11.6666666667px;
   }
 
@@ -5847,7 +5846,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 27.3px;
     padding: 6.6666666667px 8.75px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 35px;
   }
 
@@ -5855,7 +5854,7 @@ progress or delay of the item;
   .bn-xs-lg {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 
@@ -5863,7 +5862,7 @@ progress or delay of the item;
   .bn-group-xs-lg > button {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 }
@@ -5872,7 +5871,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 100px;
     border-radius: 100px;
-    font-size: 21px;
+    font-size: 18px;
     padding: 33.3333333333px;
   }
 
@@ -5880,7 +5879,7 @@ progress or delay of the item;
     min-width: 100px;
     min-height: 78px;
     padding: 15.3333333333px 25px;
-    font-size: 21px;
+    font-size: 18px;
     border-radius: 100px;
   }
 
@@ -5888,7 +5887,7 @@ progress or delay of the item;
   .bn-xl-xl {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5896,7 +5895,7 @@ progress or delay of the item;
   .bn-group-xl-xl > button {
     min-width: 100px;
     height: auto;
-    font-size: 21px;
+    font-size: 18px;
     padding: 13.3333333333px 25px;
   }
 
@@ -5904,7 +5903,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 80px;
     border-radius: 80px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 26.6666666667px;
   }
 
@@ -5912,7 +5911,7 @@ progress or delay of the item;
     min-width: 80px;
     min-height: 62.4px;
     padding: 12.6666666667px 20px;
-    font-size: 20px;
+    font-size: 17px;
     border-radius: 80px;
   }
 
@@ -5920,7 +5919,7 @@ progress or delay of the item;
   .bn-lg-xl {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5928,7 +5927,7 @@ progress or delay of the item;
   .bn-group-lg-xl > button {
     min-width: 80px;
     height: auto;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10.6666666667px 20px;
   }
 
@@ -5936,7 +5935,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 60px;
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 20px;
   }
 
@@ -5944,7 +5943,7 @@ progress or delay of the item;
     min-width: 60px;
     min-height: 46.8px;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 60px;
   }
 
@@ -5952,7 +5951,7 @@ progress or delay of the item;
   .bn-md-xl {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5960,7 +5959,7 @@ progress or delay of the item;
   .bn-group-md-xl > button {
     min-width: 60px;
     height: auto;
-    font-size: 18px;
+    font-size: 15px;
     padding: 8px 15px;
   }
 
@@ -5968,7 +5967,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 40px;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 14px;
     padding: 13.3333333333px;
   }
 
@@ -5976,7 +5975,7 @@ progress or delay of the item;
     min-width: 40px;
     min-height: 31.2px;
     padding: 7.3333333333px 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 40px;
   }
 
@@ -5984,7 +5983,7 @@ progress or delay of the item;
   .bn-sm-xl {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -5992,7 +5991,7 @@ progress or delay of the item;
   .bn-group-sm-xl > button {
     min-width: 40px;
     height: auto;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5.3333333333px 10px;
   }
 
@@ -6000,7 +5999,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 35px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 12px;
     padding: 11.6666666667px;
   }
 
@@ -6008,7 +6007,7 @@ progress or delay of the item;
     min-width: 35px;
     min-height: 27.3px;
     padding: 6.6666666667px 8.75px;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 35px;
   }
 
@@ -6016,7 +6015,7 @@ progress or delay of the item;
   .bn-xs-xl {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 
@@ -6024,7 +6023,7 @@ progress or delay of the item;
   .bn-group-xs-xl > button {
     min-width: 35px;
     height: auto;
-    font-size: 14px;
+    font-size: 12px;
     padding: 4.6666666667px 8.75px;
   }
 }
@@ -6474,22 +6473,22 @@ progress or delay of the item;
 
 .inputs-xl input, .inputs-xl label, .inputs-xl button {
   padding: 6px 8px;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .inputs-lg input, .inputs-lg label, .inputs-lg button {
   padding: 5px 7px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .inputs-md input, .inputs-md label, .inputs-md button {
   padding: 4px 6px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .inputs-sm input, .inputs-sm label, .inputs-sm button {
   padding: 3px 5px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .inputs-xs {
@@ -6498,7 +6497,7 @@ progress or delay of the item;
 .inputs-xs input, .inputs-xs label, .inputs-xs button {
   margin: 2px;
   padding: 2px 4px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* custom form : */
@@ -7220,7 +7219,7 @@ label.custom-file-label::after {
 .bn-navbar {
   display: none;
   padding: 2px 8px;
-  font-size: 20px;
+  font-size: 17px;
   border: none;
 }
 .bn-navbar:focus {
@@ -7428,7 +7427,7 @@ label.custom-file-label::after {
 }
 
 .links {
-  font-size: 20px;
+  font-size: 17px;
   margin: 0px;
   padding: 0px;
   color: #ffffff;
@@ -16285,12 +16284,6 @@ a.color-transparent:active {
   }
 }
 /* ------------------------------------------------------------------------------------------------------ */
-.overflow-hidden {
-  overflow: hidden !important;
-  width: max-content !important;
-  height: max-content !important;
-}
-
 /* --------------------------------------------------margin---------------------------------------- : */
 /* -------------------m > margin */
 .m-0, .m-all-0 > * {
@@ -30715,7 +30708,7 @@ p {
   margin-inline-start: 1px;
   margin-inline-end: 0px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 32px;
 }
 
@@ -30728,19 +30721,19 @@ p {
 
 .text, .text-md {
   font-weight: 400 !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
   line-height: 32px !important;
 }
 
 .text-sm {
   font-weight: 400 !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
   line-height: 32px !important;
 }
 
 .text-lg {
   font-weight: 400 !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
   line-height: 32px !important;
 }
 
@@ -30751,21 +30744,33 @@ p {
 }
 
 @media (max-width: 380px) {
-  .text-lg-lxs {
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    line-height: 32px !important;
-  }
-
-  .text-md-lxs {
+  .text-xl-lxs {
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 32px !important;
   }
 
+  .text-lg-lxs {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+  }
+
+  .text-md-lxs {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 32px !important;
+  }
+
   .text-sm-lxs {
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+  }
+
+  .text-xs-lxs {
+    font-weight: 400 !important;
+    font-size: 12px !important;
     line-height: 32px !important;
   }
 
@@ -30775,21 +30780,33 @@ p {
   }
 }
 @media (min-width: 380px) {
-  .text-lg-xs {
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    line-height: 32px !important;
-  }
-
-  .text-md-xs {
+  .text-xl-xs {
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 32px !important;
   }
 
+  .text-lg-xs {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+  }
+
+  .text-md-xs {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 32px !important;
+  }
+
   .text-sm-xs {
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+  }
+
+  .text-xs-xs {
+    font-weight: 400 !important;
+    font-size: 12px !important;
     line-height: 32px !important;
   }
 
@@ -30799,21 +30816,33 @@ p {
   }
 }
 @media (min-width: 560px) {
-  .text-lg-sm {
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    line-height: 32px !important;
-  }
-
-  .text-md-sm {
+  .text-xl-sm {
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 32px !important;
   }
 
+  .text-lg-sm {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+  }
+
+  .text-md-sm {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 32px !important;
+  }
+
   .text-sm-sm {
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+  }
+
+  .text-xs-sm {
+    font-weight: 400 !important;
+    font-size: 12px !important;
     line-height: 32px !important;
   }
 
@@ -30823,21 +30852,33 @@ p {
   }
 }
 @media (min-width: 740px) {
-  .text-lg-md {
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    line-height: 32px !important;
-  }
-
-  .text-md-md {
+  .text-xl-md {
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 32px !important;
   }
 
+  .text-lg-md {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+  }
+
+  .text-md-md {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 32px !important;
+  }
+
   .text-sm-md {
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+  }
+
+  .text-xs-md {
+    font-weight: 400 !important;
+    font-size: 12px !important;
     line-height: 32px !important;
   }
 
@@ -30847,21 +30888,33 @@ p {
   }
 }
 @media (min-width: 920px) {
-  .text-lg-lg {
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    line-height: 32px !important;
-  }
-
-  .text-md-lg {
+  .text-xl-lg {
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 32px !important;
   }
 
+  .text-lg-lg {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+  }
+
+  .text-md-lg {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 32px !important;
+  }
+
   .text-sm-lg {
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+  }
+
+  .text-xs-lg {
+    font-weight: 400 !important;
+    font-size: 12px !important;
     line-height: 32px !important;
   }
 
@@ -30871,21 +30924,33 @@ p {
   }
 }
 @media (min-width: 1100px) {
-  .text-lg-xl {
-    font-weight: 400 !important;
-    font-size: 20px !important;
-    line-height: 32px !important;
-  }
-
-  .text-md-xl {
+  .text-xl-xl {
     font-weight: 400 !important;
     font-size: 18px !important;
     line-height: 32px !important;
   }
 
+  .text-lg-xl {
+    font-weight: 400 !important;
+    font-size: 17px !important;
+    line-height: 32px !important;
+  }
+
+  .text-md-xl {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 32px !important;
+  }
+
   .text-sm-xl {
     font-weight: 400 !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+  }
+
+  .text-xs-xl {
+    font-weight: 400 !important;
+    font-size: 12px !important;
     line-height: 32px !important;
   }
 
@@ -31221,6 +31286,66 @@ p {
 
 .text-initial {
   font-weight: initial;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-hidden {
+  overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-scroll {
+  overflow: scroll;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-x-visible {
+  overflow: visible;
+}
+
+.overflow-y-visible {
+  overflow: visible;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-x-auto {
+  overflow: auto;
+}
+
+.overflow-y-auto {
+  overflow: auto;
+}
+
+.overflow-unset {
+  overflow: unset;
+}
+
+.overflow-x-unset {
+  overflow: unset;
+}
+
+.overflow-y-unset {
+  overflow: unset;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
