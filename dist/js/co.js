@@ -65,19 +65,53 @@
 
                     function make_slides( el, dep, dur, data_ev ) {
 
+                        el.addEventListener( 'click', function ( eve ) {
+
+                            eve.stopPropagation( );
+
+                        } );
+
+                        dep.on( 'click', function ( eve ) {
+
+                            eve.stopPropagation( );
+
+                        } );
+
+
                         // Conditions for checking slide type :
                         if ( el.getAttributeNode( 'data-slide' ).value === 'toggle' ) {
 
                             // slide toggle :
                             make_slide_toggle( el, dep, dur, data_ev );
+
                         } else if ( el.getAttributeNode( 'data-slide' ).value === 'down' ) {
 
                             // slide down :
                             make_slide_down( el, dep, dur, data_ev );
+
                         } else if ( el.getAttributeNode( 'data-slide' ).value === 'up' ) {
 
                             // slide up :
                             make_slide_up( el, dep, dur, data_ev );
+
+                        }
+
+                        if ( el.getAttributeNode( 'data-slide' ).value === 'toggle' || el.getAttributeNode( 'data-slide' ).value === 'down' ) {
+
+                            if ( el.getAttributeNode( 'data-screen' ).value !== 'collapse' ) {
+
+                                document.addEventListener( 'click', function ( documentele ) {
+
+                                    if ( documentele.target != el && documentele.target != dep ) {
+                                        
+                                        dep.slideUp( dur / 1 );
+    
+                                    }
+    
+                                } );
+
+                            }
+
                         }
                     }
 
@@ -121,10 +155,12 @@
 
                                         // Hide navbar-collapse :
                                         $( '.navbar-collapse' ).css( 'display', 'none' );
+
                                     } else {
 
                                         // Show navbar-collapse when screen size is larger than ( screen_w )
                                         $( '.navbar-collapse' ).css( 'display', 'flex' );
+
                                     }
                                 }
 
@@ -136,7 +172,8 @@
                                window.addEventListener( 'resize', function ( ) {
 
                                     // A condition that hides the navbar-collapse if the screen size is smaller than ( 740 )
-                                    hide_navbar_collapse ( 740 )
+                                    hide_navbar_collapse ( 740 );
+                                    
                                } );
 
                             // Condition if its value is true it allows him to set the screen size :
@@ -451,19 +488,49 @@
                     }
 
                     function make_fades( el, dep, dur, data_ev ) {
+
+                        el.addEventListener( 'click', function ( eve ) {
+
+                            eve.stopPropagation( );
+
+                        } );
+
+                        dep.on( 'click', function ( eve ) {
+
+                            eve.stopPropagation( );
+
+                        } );
+
                         // Conditions for checking fade type :
                         if ( el.getAttributeNode( 'data-fade' ).value === 'toggle' ) {
 
                             // fade toggle :
                             make_fade_toggle( el, dep, dur, data_ev );
+
                         } else if ( el.getAttributeNode( 'data-fade' ).value === 'out' ) {
 
                             // fade out :
                             make_fade_out( el, dep, dur, data_ev );
+
                         } else if ( el.getAttributeNode( 'data-fade' ).value === 'in' ) {
 
                             // fade in :
                             make_fade_in( el, dep, dur, data_ev );
+
+                        }
+
+                        if ( el.getAttributeNode( 'data-fade' ).value === 'toggle' || el.getAttributeNode( 'data-fade' ).value === 'in' ) {
+
+                            document.addEventListener( 'click', function ( documentele ) {
+
+                                if ( documentele.target != el && documentele.target != dep ) {
+                                    
+                                    dep.fadeOut( dur / 1 );
+
+                                }
+
+                            } );
+
                         }
                     }
 
@@ -506,6 +573,7 @@
         } );
 
     } )( );
+
 
 
     ( function ( ) { // hide & show :
@@ -582,6 +650,18 @@
 
                     function make_pattern( el, dep, dur, data_ev ) {
 
+                        el.addEventListener( 'click', function ( eve ) {
+
+                            eve.stopPropagation( );
+
+                        } );
+
+                        dep.on( 'click', function ( eve ) {
+
+                            eve.stopPropagation( );
+
+                        } );
+
                         if ( data_ev === 'toggle' ) {
 
                             // toggle :
@@ -606,6 +686,32 @@
 
                             // slide up :
                             make_slide_up( el, dep, dur );
+                        }
+
+                        if ( data_ev === 'toggle' || data_ev === 'show' ) {
+
+                            document.addEventListener( 'click', function ( documentele ) {
+
+                                if ( documentele.target != el && documentele.target != dep ) {
+                                    
+                                    dep.hide( dur / 1 );
+
+                                }
+
+                            } );
+
+                        } else if (data_ev === 'slide-toggle' || data_ev === 'slide-down' ) {
+
+                            document.addEventListener( 'click', function ( documentele ) {
+
+                                if ( documentele.target != el && documentele.target != dep ) {
+                                    
+                                    dep.slideUp( dur / 1 );
+
+                                }
+
+                            } );
+
                         }
                     }
 
