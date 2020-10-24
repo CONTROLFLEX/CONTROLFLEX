@@ -3841,11 +3841,11 @@ progress or delay of the item;
 .outline-blue {
   background-color: transparent;
   border: 1.2px solid #007bff;
-  color: #007bff !important;
+  color: #007bff;
   box-shadow: none;
 }
 .outline-blue:hover {
-  color: #007bffcf !important;
+  color: #007bffcf;
   background-color: transparent;
   border-color: #007bffcf;
 }
@@ -3853,8 +3853,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #007bff60;
   -moz-box-shadow: 0px 0px 0px 3px #007bff60;
   box-shadow: 0px 0px 0px 3px #007bff60;
-}
-.outline-blue:focus {
   background-color: #007bffcf;
   color: #ffffff;
 }
@@ -3877,11 +3875,11 @@ progress or delay of the item;
 .outline-purple {
   background-color: transparent;
   border: 1.2px solid #6f42c1;
-  color: #6f42c1 !important;
+  color: #6f42c1;
   box-shadow: none;
 }
 .outline-purple:hover {
-  color: #6f42c1cf !important;
+  color: #6f42c1cf;
   background-color: transparent;
   border-color: #6f42c1cf;
 }
@@ -3889,8 +3887,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #6f42c160;
   -moz-box-shadow: 0px 0px 0px 3px #6f42c160;
   box-shadow: 0px 0px 0px 3px #6f42c160;
-}
-.outline-purple:focus {
   background-color: #6f42c1cf;
   color: #ffffff;
 }
@@ -3913,11 +3909,11 @@ progress or delay of the item;
 .outline-pink {
   background-color: transparent;
   border: 1.2px solid #fd0076;
-  color: #fd0076 !important;
+  color: #fd0076;
   box-shadow: none;
 }
 .outline-pink:hover {
-  color: #fd0076cf !important;
+  color: #fd0076cf;
   background-color: transparent;
   border-color: #fd0076cf;
 }
@@ -3925,8 +3921,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #fd007660;
   -moz-box-shadow: 0px 0px 0px 3px #fd007660;
   box-shadow: 0px 0px 0px 3px #fd007660;
-}
-.outline-pink:focus {
   background-color: #fd0076cf;
   color: #ffffff;
 }
@@ -3949,11 +3943,11 @@ progress or delay of the item;
 .outline-red {
   background-color: transparent;
   border: 1.2px solid #eb1c30;
-  color: #eb1c30 !important;
+  color: #eb1c30;
   box-shadow: none;
 }
 .outline-red:hover {
-  color: #eb1c30cf !important;
+  color: #eb1c30cf;
   background-color: transparent;
   border-color: #eb1c30cf;
 }
@@ -3961,8 +3955,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #eb1c3060;
   -moz-box-shadow: 0px 0px 0px 3px #eb1c3060;
   box-shadow: 0px 0px 0px 3px #eb1c3060;
-}
-.outline-red:focus {
   background-color: #eb1c30cf;
   color: #ffffff;
 }
@@ -3985,11 +3977,11 @@ progress or delay of the item;
 .outline-brown {
   background-color: transparent;
   border: 1.2px solid #bb2635;
-  color: #bb2635 !important;
+  color: #bb2635;
   box-shadow: none;
 }
 .outline-brown:hover {
-  color: #bb2635cf !important;
+  color: #bb2635cf;
   background-color: transparent;
   border-color: #bb2635cf;
 }
@@ -3997,8 +3989,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #bb263560;
   -moz-box-shadow: 0px 0px 0px 3px #bb263560;
   box-shadow: 0px 0px 0px 3px #bb263560;
-}
-.outline-brown:focus {
   background-color: #bb2635cf;
   color: #ffffff;
 }
@@ -4021,11 +4011,11 @@ progress or delay of the item;
 .outline-tomato {
   background-color: transparent;
   border: 1.2px solid #ff6347;
-  color: #ff6347 !important;
+  color: #ff6347;
   box-shadow: none;
 }
 .outline-tomato:hover {
-  color: #ff6347cf !important;
+  color: #ff6347cf;
   background-color: transparent;
   border-color: #ff6347cf;
 }
@@ -4033,8 +4023,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #ff634760;
   -moz-box-shadow: 0px 0px 0px 3px #ff634760;
   box-shadow: 0px 0px 0px 3px #ff634760;
-}
-.outline-tomato:focus {
   background-color: #ff6347cf;
   color: #ffffff;
 }
@@ -4057,11 +4045,11 @@ progress or delay of the item;
 .outline-orange {
   background-color: transparent;
   border: 1.2px solid #e9802a;
-  color: #e9802a !important;
+  color: #e9802a;
   box-shadow: none;
 }
 .outline-orange:hover {
-  color: #e9802acf !important;
+  color: #e9802acf;
   background-color: transparent;
   border-color: #e9802acf;
 }
@@ -4069,8 +4057,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #e9802a60;
   -moz-box-shadow: 0px 0px 0px 3px #e9802a60;
   box-shadow: 0px 0px 0px 3px #e9802a60;
-}
-.outline-orange:focus {
   background-color: #e9802acf;
   color: #ffffff;
 }
@@ -4093,11 +4079,11 @@ progress or delay of the item;
 .outline-yellow {
   background-color: transparent;
   border: 1.2px solid #f1bc1a;
-  color: #f1bc1a !important;
+  color: #f1bc1a;
   box-shadow: none;
 }
 .outline-yellow:hover {
-  color: #f1bc1acf !important;
+  color: #f1bc1acf;
   background-color: transparent;
   border-color: #f1bc1acf;
 }
@@ -4105,8 +4091,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #f1bc1a60;
   -moz-box-shadow: 0px 0px 0px 3px #f1bc1a60;
   box-shadow: 0px 0px 0px 3px #f1bc1a60;
-}
-.outline-yellow:focus {
   background-color: #f1bc1acf;
   color: #ffffff;
 }
@@ -4129,11 +4113,11 @@ progress or delay of the item;
 .outline-gold {
   background-color: transparent;
   border: 1.2px solid #ffd000;
-  color: #ffd000 !important;
+  color: #ffd000;
   box-shadow: none;
 }
 .outline-gold:hover {
-  color: #ffd000cf !important;
+  color: #ffd000cf;
   background-color: transparent;
   border-color: #ffd000cf;
 }
@@ -4141,8 +4125,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #ffd00060;
   -moz-box-shadow: 0px 0px 0px 3px #ffd00060;
   box-shadow: 0px 0px 0px 3px #ffd00060;
-}
-.outline-gold:focus {
   background-color: #ffd000cf;
   color: #ffffff;
 }
@@ -4165,11 +4147,11 @@ progress or delay of the item;
 .outline-green {
   background-color: transparent;
   border: 1.2px solid #25b146;
-  color: #25b146 !important;
+  color: #25b146;
   box-shadow: none;
 }
 .outline-green:hover {
-  color: #25b146cf !important;
+  color: #25b146cf;
   background-color: transparent;
   border-color: #25b146cf;
 }
@@ -4177,8 +4159,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #25b14660;
   -moz-box-shadow: 0px 0px 0px 3px #25b14660;
   box-shadow: 0px 0px 0px 3px #25b14660;
-}
-.outline-green:focus {
   background-color: #25b146cf;
   color: #ffffff;
 }
@@ -4201,11 +4181,11 @@ progress or delay of the item;
 .outline-teal {
   background-color: transparent;
   border: 1.2px solid #21c795;
-  color: #21c795 !important;
+  color: #21c795;
   box-shadow: none;
 }
 .outline-teal:hover {
-  color: #21c795cf !important;
+  color: #21c795cf;
   background-color: transparent;
   border-color: #21c795cf;
 }
@@ -4213,8 +4193,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #21c79560;
   -moz-box-shadow: 0px 0px 0px 3px #21c79560;
   box-shadow: 0px 0px 0px 3px #21c79560;
-}
-.outline-teal:focus {
   background-color: #21c795cf;
   color: #ffffff;
 }
@@ -4237,11 +4215,11 @@ progress or delay of the item;
 .outline-cyan {
   background-color: transparent;
   border: 1.2px solid #31b7cc;
-  color: #31b7cc !important;
+  color: #31b7cc;
   box-shadow: none;
 }
 .outline-cyan:hover {
-  color: #31b7cccf !important;
+  color: #31b7cccf;
   background-color: transparent;
   border-color: #31b7cccf;
 }
@@ -4249,8 +4227,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #31b7cc60;
   -moz-box-shadow: 0px 0px 0px 3px #31b7cc60;
   box-shadow: 0px 0px 0px 3px #31b7cc60;
-}
-.outline-cyan:focus {
   background-color: #31b7cccf;
   color: #ffffff;
 }
@@ -4273,11 +4249,11 @@ progress or delay of the item;
 .outline-light {
   background-color: transparent;
   border: 1.2px solid #ffffff;
-  color: #ffffff !important;
+  color: #ffffff;
   box-shadow: none;
 }
 .outline-light:hover {
-  color: #ffffffcf !important;
+  color: #ffffffcf;
   background-color: transparent;
   border-color: #ffffffcf;
 }
@@ -4285,8 +4261,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #ffffff60;
   -moz-box-shadow: 0px 0px 0px 3px #ffffff60;
   box-shadow: 0px 0px 0px 3px #ffffff60;
-}
-.outline-light:focus {
   background-color: #ffffffcf;
   color: #3e4653;
 }
@@ -4309,11 +4283,11 @@ progress or delay of the item;
 .outline-light-blue {
   background-color: transparent;
   border: 1.2px solid #cde1ff;
-  color: #cde1ff !important;
+  color: #cde1ff;
   box-shadow: none;
 }
 .outline-light-blue:hover {
-  color: #cde1ffcf !important;
+  color: #cde1ffcf;
   background-color: transparent;
   border-color: #cde1ffcf;
 }
@@ -4321,8 +4295,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #cde1ff60;
   -moz-box-shadow: 0px 0px 0px 3px #cde1ff60;
   box-shadow: 0px 0px 0px 3px #cde1ff60;
-}
-.outline-light-blue:focus {
   background-color: #cde1ffcf;
   color: #007bff;
 }
@@ -4345,11 +4317,11 @@ progress or delay of the item;
 .outline-gray {
   background-color: transparent;
   border: 1.2px solid #a8a8a8;
-  color: #a8a8a8 !important;
+  color: #a8a8a8;
   box-shadow: none;
 }
 .outline-gray:hover {
-  color: #a8a8a8cf !important;
+  color: #a8a8a8cf;
   background-color: transparent;
   border-color: #a8a8a8cf;
 }
@@ -4357,8 +4329,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #a8a8a860;
   -moz-box-shadow: 0px 0px 0px 3px #a8a8a860;
   box-shadow: 0px 0px 0px 3px #a8a8a860;
-}
-.outline-gray:focus {
   background-color: #a8a8a8cf;
   color: #ffffff;
 }
@@ -4381,11 +4351,11 @@ progress or delay of the item;
 .outline-dark {
   background-color: transparent;
   border: 1.2px solid #4e4e4e;
-  color: #4e4e4e !important;
+  color: #4e4e4e;
   box-shadow: none;
 }
 .outline-dark:hover {
-  color: #4e4e4ecf !important;
+  color: #4e4e4ecf;
   background-color: transparent;
   border-color: #4e4e4ecf;
 }
@@ -4393,8 +4363,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #4e4e4e60;
   -moz-box-shadow: 0px 0px 0px 3px #4e4e4e60;
   box-shadow: 0px 0px 0px 3px #4e4e4e60;
-}
-.outline-dark:focus {
   background-color: #4e4e4ecf;
   color: #ffffff;
 }
@@ -4417,11 +4385,11 @@ progress or delay of the item;
 .outline-very-dark {
   background-color: transparent;
   border: 1.2px solid #2c2c2c;
-  color: #2c2c2c !important;
+  color: #2c2c2c;
   box-shadow: none;
 }
 .outline-very-dark:hover {
-  color: #2c2c2ccf !important;
+  color: #2c2c2ccf;
   background-color: transparent;
   border-color: #2c2c2ccf;
 }
@@ -4429,8 +4397,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #2c2c2c60;
   -moz-box-shadow: 0px 0px 0px 3px #2c2c2c60;
   box-shadow: 0px 0px 0px 3px #2c2c2c60;
-}
-.outline-very-dark:focus {
   background-color: #2c2c2ccf;
   color: #ffffff;
 }
@@ -4453,11 +4419,11 @@ progress or delay of the item;
 .outline-black {
   background-color: transparent;
   border: 1.2px solid #000000;
-  color: #000000 !important;
+  color: #000000;
   box-shadow: none;
 }
 .outline-black:hover {
-  color: #000000cf !important;
+  color: #000000cf;
   background-color: transparent;
   border-color: #000000cf;
 }
@@ -4465,8 +4431,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #00000060;
   -moz-box-shadow: 0px 0px 0px 3px #00000060;
   box-shadow: 0px 0px 0px 3px #00000060;
-}
-.outline-black:focus {
   background-color: #000000cf;
   color: #ffffff;
 }
@@ -4489,11 +4453,11 @@ progress or delay of the item;
 .outline-dark-blue {
   background-color: transparent;
   border: 1.2px solid #3e4653;
-  color: #3e4653 !important;
+  color: #3e4653;
   box-shadow: none;
 }
 .outline-dark-blue:hover {
-  color: #3e4653cf !important;
+  color: #3e4653cf;
   background-color: transparent;
   border-color: #3e4653cf;
 }
@@ -4501,8 +4465,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px #3e465360;
   -moz-box-shadow: 0px 0px 0px 3px #3e465360;
   box-shadow: 0px 0px 0px 3px #3e465360;
-}
-.outline-dark-blue:focus {
   background-color: #3e4653cf;
   color: #ffffff;
 }
@@ -4525,11 +4487,11 @@ progress or delay of the item;
 .outline-transparent {
   background-color: transparent;
   border: 1.2px solid transparent;
-  color: transparent !important;
+  color: transparent;
   box-shadow: none;
 }
 .outline-transparent:hover {
-  color: transparentcf !important;
+  color: transparentcf;
   background-color: transparent;
   border-color: transparentcf;
 }
@@ -4537,8 +4499,6 @@ progress or delay of the item;
   -webkit-box-shadow: 0px 0px 0px 3px transparent;
   -moz-box-shadow: 0px 0px 0px 3px transparent;
   box-shadow: 0px 0px 0px 3px transparent;
-}
-.outline-transparent:focus {
   background-color: transparentcf;
   color: #ffffff;
 }
