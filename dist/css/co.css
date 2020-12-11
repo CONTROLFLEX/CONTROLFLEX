@@ -902,7 +902,7 @@ sass --watch "C:\Users\SALIM ALSULAIMI\Desktop\CONTROLFLEX\controlfex.scss":"C:\
   }
 }
 @media (min-width: 1400px) {
-  .container, .container-main, .container-full {
+  .container, .container-main {
     width: 1400px;
   }
 
@@ -5753,9 +5753,8 @@ progress or delay of the item;
 /*----------------------------------------custom lable : */
 .custom-label {
   display: block;
-  z-index: 0;
   padding: 8.5px 10px;
-  margin: 0px;
+  margin: 0;
   align-items: center;
   font-size: 16px;
 }
@@ -5807,7 +5806,7 @@ label.custom-checkbox-label::after {
   position: absolute;
   top: 50%;
   left: 4px;
-  transform: translate(0%, -50%);
+  transform: translateY(-50%);
 }
 
 /*----------------------------------------------------------*/
@@ -6687,7 +6686,7 @@ label.custom-file-label::after {
 }
 
 /* -------------------------------------------------------------------------------------------buttons-------------------------------------------------------------------------------- : */
-.bn, .bn-xs, .bn-sm, .bn-md, .bn-lg, .bn-xl, .bn-xs-mxl, .bn-sm-mxl, .bn-md-mxl, .bn-lg-mxl, .bn-xl-mxl, .bn-xs-xl, .bn-sm-xl, .bn-md-xl, .bn-lg-xl, .bn-xl-xl, .bn-xs-lg, .bn-sm-lg, .bn-md-lg, .bn-lg-lg, .bn-xl-lg, .bn-xs-md, .bn-sm-md, .bn-md-md, .bn-lg-md, .bn-xl-md, .bn-xs-sm, .bn-sm-sm, .bn-md-sm, .bn-lg-sm, .bn-xl-sm, .bn-xs-xs, .bn-sm-xs, .bn-md-xs, .bn-lg-xs, .bn-xl-xs, .bn-xs-lxs, .bn-sm-lxs, .bn-md-lxs, .bn-lg-lxs, .bn-xl-lxs {
+.bn, .bn-xs, .bn-sm, .bn-md, .bn-lg, .bn-xl, .bn-xs-mxl, .bn-sm-mxl, .bn-md-mxl, .bn-lg-mxl, .bn-xl-mxl, .bn-xs-xl, .bn-sm-xl, .bn-md-xl, .bn-lg-xl, .bn-xl-xl, .bn-xs-lg, .bn-sm-lg, .bn-md-lg, .bn-lg-lg, .bn-xl-lg, .bn-xs-md, .bn-sm-md, .bn-md-md, .bn-lg-md, .bn-xl-md, .bn-xs-sm, .bn-sm-sm, .bn-md-sm, .bn-lg-sm, .bn-xl-sm, .bn-xs-xs, .bn-sm-xs, .bn-md-xs, .bn-lg-xs, .bn-xl-xs, .bn-xs-lxs, .bn-sm-lxs, .bn-md-lxs, .bn-lg-lxs, .bn-xl-lxs, .bn-block {
   background-color: #EEE;
   color: #3e4653;
   padding: 8px 15px;
@@ -6702,8 +6701,12 @@ label.custom-file-label::after {
   cursor: pointer;
   text-decoration: none;
 }
-.bn:focus, .bn-xs:focus, .bn-sm:focus, .bn-md:focus, .bn-lg:focus, .bn-xl:focus, .bn-xs-mxl:focus, .bn-sm-mxl:focus, .bn-md-mxl:focus, .bn-lg-mxl:focus, .bn-xl-mxl:focus, .bn-xs-xl:focus, .bn-sm-xl:focus, .bn-md-xl:focus, .bn-lg-xl:focus, .bn-xl-xl:focus, .bn-xs-lg:focus, .bn-sm-lg:focus, .bn-md-lg:focus, .bn-lg-lg:focus, .bn-xl-lg:focus, .bn-xs-md:focus, .bn-sm-md:focus, .bn-md-md:focus, .bn-lg-md:focus, .bn-xl-md:focus, .bn-xs-sm:focus, .bn-sm-sm:focus, .bn-md-sm:focus, .bn-lg-sm:focus, .bn-xl-sm:focus, .bn-xs-xs:focus, .bn-sm-xs:focus, .bn-md-xs:focus, .bn-lg-xs:focus, .bn-xl-xs:focus, .bn-xs-lxs:focus, .bn-sm-lxs:focus, .bn-md-lxs:focus, .bn-lg-lxs:focus, .bn-xl-lxs:focus {
+.bn:focus, .bn-xs:focus, .bn-sm:focus, .bn-md:focus, .bn-lg:focus, .bn-xl:focus, .bn-xs-mxl:focus, .bn-sm-mxl:focus, .bn-md-mxl:focus, .bn-lg-mxl:focus, .bn-xl-mxl:focus, .bn-xs-xl:focus, .bn-sm-xl:focus, .bn-md-xl:focus, .bn-lg-xl:focus, .bn-xl-xl:focus, .bn-xs-lg:focus, .bn-sm-lg:focus, .bn-md-lg:focus, .bn-lg-lg:focus, .bn-xl-lg:focus, .bn-xs-md:focus, .bn-sm-md:focus, .bn-md-md:focus, .bn-lg-md:focus, .bn-xl-md:focus, .bn-xs-sm:focus, .bn-sm-sm:focus, .bn-md-sm:focus, .bn-lg-sm:focus, .bn-xl-sm:focus, .bn-xs-xs:focus, .bn-sm-xs:focus, .bn-md-xs:focus, .bn-lg-xs:focus, .bn-xl-xs:focus, .bn-xs-lxs:focus, .bn-sm-lxs:focus, .bn-md-lxs:focus, .bn-lg-lxs:focus, .bn-xl-lxs:focus, .bn-block:focus {
   outline: none;
+}
+
+.bn-block {
+  display: block;
 }
 
 .bn-close {
@@ -36094,5 +36097,4 @@ p {
     height: 100%;
   }
 }
-
 
